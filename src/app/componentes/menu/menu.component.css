@@ -1,0 +1,85 @@
+mat-toolbar {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  height: 64px;
+  background: linear-gradient(135deg, #1976d2 0%, #283593 100%);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+mat-toolbar.scrolled {
+  background: #fff;
+  color: #000000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-weight: bolder;
+  text-shadow: none;
+}
+
+.brand {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.brand a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand-name {
+  font-weight: bold;
+  margin-left: 4px;
+  font-size: 23px;
+}
+
+.nav-links {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-right: 25%;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid white;
+}
+
+/* Cuando hacemos scroll */
+mat-toolbar.scrolled .nav-links a:hover {
+  background-color: #1976d2;
+  color: white;
+  border-bottom: 2px solid #1976d2;
+}
+
+
+/* Botón cuando hacemos scroll */
+mat-toolbar.scrolled .contact-btn {
+  background-color: #1976d2;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  
+  .brand {
+    flex: 2;
+  }
+}

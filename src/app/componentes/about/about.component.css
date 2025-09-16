@@ -1,0 +1,138 @@
+.about {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #ffffff 0%, #86888a 100%);
+  color: #333; 
+  text-align: center;
+  margin: 0;
+  padding: 2rem 1rem;
+  gap: 2rem;
+}
+
+.about-texto-mi {
+    opacity: 0.5;
+}
+
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    color: #1976d2;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.title-divider {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(135deg, #1976d2 0%, #283593 100%);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.about-content {
+    display: grid;
+    gap: 50px;
+}
+
+.about-main {
+    text-align: center;
+}
+
+.about-intro {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.about-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #1976d2;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(25, 118, 210, 0.15);
+}
+
+.about-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.highlight {
+    color: #1976d2;
+    font-weight: 600;
+}
+
+.tech-highlight {
+    color: #1976d2;
+    font-weight: 600;
+    background: rgba(25, 118, 210, 0.1);
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+}
+
+/*conocimiento lenguajes*/
+.skill-category {
+    color: #1976d2;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+    text-align: left; 
+    width: 100%;
+    margin-left: 1rem;
+}
+
+.skill-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    justify-content: center;
+}
+
+.skill-chip {
+    background: linear-gradient(135deg, #7cacdb 0%, #6274ff 100%);
+    color: white !important;
+    border-radius: 20px #1976d2 !important;
+    font-weight: 500;
+    padding: 0.6rem 1.2rem !important;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.skill-chip:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(25, 118, 210, 0.4) !important;
+}

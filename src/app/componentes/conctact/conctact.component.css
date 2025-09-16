@@ -1,0 +1,266 @@
+/* CONTACTO SECTION */
+.contacto {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f2f5 100%);
+    color: #2c3e50;
+    padding: 2rem 1rem;
+    gap: 2rem;
+}
+
+.contacto-titulo {
+    font-size: 2.5rem;
+    color: #1976d2;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.contacto-subtitulo {
+    font-size: 1.2rem;
+    color: #5a6c7d;
+    max-width: 600px;
+    line-height: 1.6;
+    margin: -1rem 0 2rem;
+}
+
+.contacto-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.contacto-card {
+    width: 100%;
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+}
+
+.contacto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(25, 118, 210, 0.15);
+}
+
+.contacto-card mat-card-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.contacto-card mat-icon {
+    background: linear-gradient(135deg, #1976d2 0%, #4791db 100%);
+    color: white;
+    padding: 0.6rem;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contacto-texto {
+    flex: 1;
+    text-align: left;
+}
+
+.skill-category {
+    color: #1976d2;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 0.3rem 0;
+}
+
+.contacto-card p {
+    color: #5a6c7d;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* REDES SOCIALES */
+.redes-sociales {
+    width: 100%;
+    max-width: 400px;
+}
+
+.redes-titulo {
+    color: #1976d2;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.redes-contenedor {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.red-social {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.2rem;
+    background: white;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #2c3e50;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e1e8ed;
+}
+
+.red-social:hover {
+    background: #1976d2;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(25, 118, 210, 0.3);
+}
+
+/* OPORTUNIDADES */
+.oportunidades {
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    border-radius: 12px;
+    border-left: 4px solid #1976d2;
+}
+
+.oportunidades-titulo {
+    color: #1976d2;
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+}
+
+.oportunidades-texto {
+    color: #455a64;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.cv-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.5rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.cv-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* FOOTER */
+.footer {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    width: 100%; 
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-text {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.footer-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    color: #bbdefb;
+    font-size: 0.9rem;
+}
+
+.separator {
+    color: #64b5f6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .contacto {
+        padding: 1.5rem 1rem;
+        gap: 1.5rem;
+    }
+    
+    .contacto-titulo {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .contacto-subtitulo {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    
+    .contacto-contenedor,
+    .redes-sociales,
+    .oportunidades {
+        max-width: 100%;
+    }
+    
+    .redes-contenedor {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .red-social {
+        justify-content: center;
+    }
+    
+    .footer-details {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+    
+    .separator {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .contacto-titulo {
+        font-size: 1.8rem;
+    }
+    
+    .contacto-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.8rem;
+    }
+    
+    .contacto-card mat-card-content {
+        flex-direction: column;
+    }
+}

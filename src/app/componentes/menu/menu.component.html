@@ -1,0 +1,19 @@
+<mat-toolbar [class.scrolled]="isScrolled" color="primary">
+  <!-- Nombre / Logo -->
+  <span class="brand">
+    <a mat-button routerLink="/">
+      <mat-icon>code</mat-icon>
+      <span class="brand-name">Omar Daza</span>
+    </a>
+  </span>
+
+  <!-- Menú central -->
+  <div class="nav-links">
+    <a mat-button (click)="scrollToSection('inicio')">Inicio</a>
+    <a mat-button (click)="scrollToSection('about')">Sobre mí</a>
+    <a mat-button (click)="scrollToSection('experiencia')">Experiencia</a>
+    <a mat-button (click)="scrollToSection('proyectos')">Proyectos</a>
+    <a mat-button (click)="scrollToSection('contacto')">Contacto</a>
+</div>
+
+</mat-toolbar>
