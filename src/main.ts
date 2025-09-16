@@ -1,13 +1,17 @@
 import { bootstrapApplication } from '@angular/platform-browser';
 import { appConfig } from './app/app.config';
 import { AppComponent } from './app/app.component';
-import { injectSpeedInsights } from '@vercel/speed-insights';
+
+// Importaciones de Vercel
 import { inject } from '@vercel/analytics';
+import { injectSpeedInsights } from '@vercel/speed-insights';
 
-// Inject Vercel Analytics BEFORE bootstrapping
-inject();
-injectSpeedInsights();
+// Inyectar manualmente
+if (typeof window !== 'undefined') {
+  inject();
+  injectSpeedInsights();
+}
 
-// Bootstrap the application
+// Bootstrap de la aplicación
 bootstrapApplication(AppComponent, appConfig)
   .catch((err) => console.error(err));
