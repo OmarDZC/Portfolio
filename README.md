@@ -10,9 +10,8 @@
 
 ## ✨ Características
 
-- ✅ **Diseño moderno y responsive**
+- ✅ **Diseño moderno**
 - ✅ **Animaciones y transiciones suaves**
-- ✅ **100% mobile friendly**
 
 ## 🛠️ Tecnologías Utilizadas
 
