@@ -32,4 +32,4 @@ npm install
 # Servidor de desarrollo
 ng serve -o
 
-# Abrir en http://localhost:4200
+# Abrir en http://localhost:xxxx
