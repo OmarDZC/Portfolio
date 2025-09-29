@@ -11,13 +11,10 @@ import { MatIconModule } from '@angular/material/icon';
 })
 export class ConctactComponent {
 
-  descargarCV() {
-    // Aquí va la lógica para descargar el CV
-    // Por ejemplo:
+  downloadCV(): void {
     const link = document.createElement('a');
-    link.href = 'ruta/a/tu/cv.pdf'; // Reemplaza con la ruta real a tu CV
-    link.download = 'CV_Omar_Dev.pdf';
-    link.target = '_blank';
+    link.href = 'cv.pdf';
+    link.download = 'CV_Omar_Daza.pdf';
     link.click();
   }
 
