@@ -30,6 +30,6 @@ git clone https://github.com/OmarDZC/Portfolio.git
 npm install
 
 # Servidor de desarrollo
-ng serve
+ng serve -o
 
 # Abrir en http://localhost:4200
